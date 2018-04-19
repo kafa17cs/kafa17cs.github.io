@@ -1,0 +1,264 @@
+@charset "utf-8";
+@import url("/css/menustyle.css");
+
+<style > body {
+    font-family: 'Nanum+Gothic', arial, sans-serif;
+    font-size: 1em;
+    margin: 0;
+    background-color: #fafafa;
+}
+
+img {
+    max-width: 100%;
+    /* 이미지의 최대사이즈 */
+    width/***/
+    : auto;
+    /* only IE8 */
+    height: auto;
+    vertical-align: bottom;
+    margin: 0;
+}
+
+
+/* -- main content -- */
+
+.content-container {
+    position: relative;
+    z-index: 0;
+    padding: 20px;
+    margin: 0 auto;
+    overflow: hidden;
+    transition: all 1000ms ease-in-out;
+}
+
+.site-title {
+    text-align: left;
+    position:fixed;
+    padding-left: 50px;
+    padding-top: 10px;
+    top:0px;    
+    left: 0px;
+    background-color: white;
+    right: 0px;
+    height: 100px;
+    width: 100%
+    transition: all 300ms ease-in-out;
+}
+
+.site-title p {
+    padding-right : 30px;    
+}
+
+.site-title h1 {
+    font-weight: 300;
+    text-transform: uppercase;
+    letter-spacing: 10px;
+}
+
+.content img {
+    display: block;
+}
+
+.content p {
+    line-height: 1.6em;
+    margin-bottom: 24px;
+}
+
+/* -- Slideout Sidebar -- */
+
+.slideout-sidebar {
+    position: fixed;
+    top: 0;
+    right: -190px;
+    z-index: 0;
+    width: 100px;
+    height: 100%;
+    padding: 20px;
+    background-color: #0F3367;
+    transition: all 300ms ease-in-out;
+}
+
+.slideout-sidebar ul {
+    text-align: center;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.slideout-sidebar ul li {
+    cursor: pointer;
+    padding: 18px 0;
+    border-bottom: 1px solid rgba(244, 244, 244, 0.4);
+    color: rgba(244, 244, 244, 0.7);
+}
+
+.slideout-sidebar ul li:last-child {
+    border-bottom: 0;
+}
+
+.slideout-sidebar ul li:hover {
+    color: rgba(244, 244, 244, 1);
+}
+
+/*-- 메뉴토클 display off--*/
+
+#menu-toggle {
+    display: none;
+}
+
+.menu-icon {
+    font-size: 0px;
+}
+
+/* -- 리모컨 등장 -- */
+
+.go-top {
+    position: fixed;
+    right: 10px;
+    bottom: 10px;
+    display: none;
+    height: 100px;
+    width: 50px;
+    background: rgba(0, 174, 231, 0.5);
+    text-align: center;
+    line-height: 50px;
+    z-index: 9999;
+}
+
+.go-bottom {
+    position: fixed;
+    right: 10px;
+    bottom: 10px;
+    display: none;
+    height: 50px;
+    width: 50px;
+    background: rgba(0, 0, 0, 0);
+    text-align: center;
+    line-height: 50px;
+    z-index: 9999;
+}
+
+
+/* -- 모바일 반응형 -- */
+
+@media (max-width: 800px) {
+
+
+    /* -- 메뉴 토글 등장 -- */
+    #menu-toggle {
+        display: none;
+    }
+
+    .menu-icon {
+        position: fixed;
+        top: 10px;
+        right: 10px;
+        font-size: 24px;
+        z-index: 1;
+        height: 50px;
+        width: 50px;
+        text-align: center;
+        line-height: 50px;
+        transition: all 300ms ease-in-out;
+        background: rgba(0, 174, 231, 0.5);
+        color: #fafafa;
+    }
+
+    /*-- The Magic --*/
+    #menu-toggle:checked ~ .slideout-sidebar {
+        right: 0px;
+    }
+
+    #menu-toggle:checked + .menu-icon {
+        right: 210px;
+        background: rgba(0, 0, 0, 0);
+        color: black;
+    }
+
+    #menu-toggle:checked ~ .content-container {
+        padding-right: 190px;
+    }
+    
+    #menu-toggle:checked ~ .site-title {
+        padding-right: 190px;
+    }
+
+    /*-- 모바일 시 크기 --*/
+    
+    .main-navigation {
+      display: none;
+    }
+   
+    .site-title {
+        padding : 0px;
+        text-align: center;
+        margin-bottom: 24px;
+        transition: all 300ms ease-in-out;
+    }
+
+    .content-container {
+        max-width: 100%;
+        margin: 30px auto 0;
+    }
+
+    #menu-toggle:checked ~ .content-container {
+        padding-right: 5%;
+    }
+
+    .slideout-sidebar ul {
+        text-align: center;
+        max-width: 100%;
+        margin: 20px auto 0;
+    }
+
+    .slideout-sidebar ul li {
+        font-size: 0.7em;
+    }
+
+    .menu-icon {
+        right: 10px
+    }
+
+    #menu-toggle:checked ~ .slideout-sidebar {
+        width: 10%;
+    }
+
+    #menu-toggle:checked + .menu-icon {
+        left: 85%;
+        color: #fafafa;
+    }
+
+
+}
+
+element.style {
+    display: none;
+}
+
+
+.bottom {
+    background-color: #021C44;
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 0.6em;
+    color: white;
+
+}
+
+.bottom img {
+    max-width: 80%;
+    /* 이미지의 최대사이즈 */
+    width/***/
+    : auto;
+    /* only IE8 */
+    height: auto;
+    vertical-align: bottom;
+    margin-left: auto;
+    margin-right: auto;
+
+    display: block;
+    text-align: center;
+    background-color: #021C44;
+}
+
+</style >
