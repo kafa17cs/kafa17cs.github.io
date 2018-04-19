@@ -229,6 +229,7 @@ element.style {
     display: none;
 }
 
+/* -- 바텀 페이지(지도) -- */
 
 .bottom {
     background-color: #021C44;
@@ -255,20 +256,25 @@ element.style {
     background-color: #021C44;
 }
 
-.entry {
-background-image : url(/img/bottomback2.jpg)
-   
-    
+/* -- 컨텍트 페이지 -- */
+
+.contact {
+background-image : url(/img/bottomback3.jpg)
+
 }
-h1.title {text-shadow : 1px 5px 5px #666666;
-color : white;
-padding-top: 10px;
-padding-bottom: 200px;
-    width : 100%;
-text-align : center;
-    font-size: 3em;
-    background-repeat: no-repeat;
-margin-bottom: 0px;}
+
+h1.contitle {text-shadow : 1px 1px 2px #666666;
+color : #021C44;
+padding-top : 5px;
+    z-index:0;
+background-repeat : no-repeat;
+text-align : center;}
+
+h2.contitle {text-shadow : 1px 1px 2px #666666;
+color : #021C44;
+z-index:0;
+background-repeat : no-repeat;
+text-align : center;}
 
 
 </style >
