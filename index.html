@@ -4,8 +4,9 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1 minimum-scale=1, maximum-scale=1">
     <title>성무대 종교센터</title>
+    <link rel="stylesheet" href="./css/swiper.min.css">
     <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href='https://fonts.googleapis.com/css?family=Nanum+Gothic' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="./css/totalstyle.css">
@@ -59,6 +60,7 @@
                 }, 1000);
             });
         });
+
     </script>
 
 
@@ -73,7 +75,49 @@
         gtag('js', new Date());
 
         gtag('config', 'UA-117196579-1');
+
     </script>
+    <style>
+        html,
+        body {
+            position: inherit;
+            height: 100%;
+        }
+
+        body {
+            background: #eee;
+            font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+            font-size: 14px;
+            color: #000;
+            margin: 0;
+            padding: 0;
+        }
+
+        .swiper-container {
+            width: 100%;
+            height: 100%;
+        }
+
+        .swiper-slide {
+            text-align: center;
+            font-size: 18px;
+            background: #fff;
+            /* Center slide text vertically */
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: -webkit-flex;
+            display: flex;
+            -webkit-box-pack: center;
+            -ms-flex-pack: center;
+            -webkit-justify-content: center;
+            justify-content: center;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
+            -webkit-align-items: center;
+            align-items: center;
+        }
+
+    </style>
 </head>
 
 <body link="#ffffff" vlink="#ffffff" alink="#ffffff">
@@ -112,35 +156,88 @@
                     var c = document.getElementsByTagName("script")[0];
                     c.parentNode.insertBefore(cp, c);
                 })();
+
             </script><noscript><span>test1</span><span>originaldate</span><span> 1/1/0001 6:00:00 AM</span><span>width</span><span> 1366</span><span>height</span><span> 768</span><span>originaldate</span><span> 1/1/0001 6:00:00 AM</span><span>width</span><span> 1366</span><span>height</span><span> 768</span></noscript>
 
         </div>
 
-        <div class="content" id="KI">
-            <img src="./img/KI.jpg" alt="captain america" class="기독교" />
-            <p>기독교 기독교기독교 기독교기독교 기독교기독교 기독교기독교 기독교기독교 기독교기독교 기독교기독교 기독교기독교 기독교기독교 기독교기독교 기독교기독교 기독교기독교 기독교기독교 기독교기독교 기독교기독교 기독교기독교 기독교기독교 기독교기독교 기독교기독교 기독교기독교 기독교기독교 기독교기독교 기독교기독교 기독교기독교 기독교기독교 기독교기독교 기독교기독교 기독교기독교 기독교기독교 기독교기독교 기독교기독교 기독교기독교 기독교기독교 기독교기독교 기독교기독교 기독교기독교 기독교기독교 기독교기독교 기독교기독교 기독교기독교 기독교기독교 기독교기독교 기독교기독교 기독교기독교 기독교기독교 기독교기독교 기독교기독교 기독교기독교 기독교기독교 기독교기독교 기독교기독교 기독교기독교 기독교기독교 기독교기독교 기독교기독교 기독교기독교 기독교기독교 기독교기독교 기독교</p>
+        <div class="swiper-container" id="KI">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <img src="./img/KI.jpg" alt="captain america" class="기독교" />
+                </div>
+                <div class="swiper-slide">Slide 2</div>
+                <div class="swiper-slide">Slide 3</div>
+
+            </div>
+            <!-- Add Arrows -->
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
         </div>
-        <div class="content" id="BUL">
-            <img src="./img/BUL.jpg" class="불교" />
-            <p>불교 불교불교 불교불교 불교불교 불교불교 불교불교 불교불교 불교불교 불교불교 불교불교 불교불교 불교불교 불교불교 불교불교 불교불교 불교불교 불교불교 불교불교 불교불교 불교불교 불교불교 불교불교 불교불교 불교불교 불교불교 불교불교 불교불교 불교불교 불교불교 불교불교 불교불교 불교불교 불교불교 불교불교 불교불교 불교불교 불교불교 불교불교 불교불교 불교불교 불교불교 불교불교 불교불교 불교불교 불교불교 불교불교 불교불교 불교불교 불교불교 불교불교 불교불교 불교불교 불교불교 불교불교 불교불교 불교불교 불교불교 불교불교 불교불교 불교불교 불교불교 불교불교 불교불교 불교불교 불교불교 불교불교 불교불교 불교불교 불교불교 불교불교 불교불교 불교불교 불교불교 불교불교 불교불교 불교불교 불교불교 불교불교 불교불교 불교불교 불교불교 불교불교 불교불교 불교불교 불교불교 불교</p>
+        <div class="swiper-container" id="BUL">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <img src="./img/BUL.jpg" class="불교" />
+                </div>
+                <div class="swiper-slide">Slide 2</div>
+                <div class="swiper-slide">Slide 3</div>
+
+            </div>
+            <!-- Add Arrows -->
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
         </div>
-        <div class="content" id="ONE">
-            <img src="./img/ONE.jpg" alt="captain america" class="원불교" />
-            <p>원불교 원불교원불교 원불교원불교 원불교원불교 원불교원불교 원불교원불교 원불교원불교 원불교원불교 원불교원불교 원불교원불교 원불교원불교 원불교원불교 원불교원불교 원불교원불교 원불교원불교 원불교원불교 원불교원불교 원불교원불교 원불교원불교 원불교원불교 원불교원불교 원불교원불교 원불교원불교 원불교원불교 원불교원불교 원불교원불교 원불교원불교 원불교원불교 원불교원불교 원불교원불교 원불교원불교 원불교원불교 원불교원불교 원불교원불교 원불교원불교 원불교원불교 원불교원불교 원불교원불교 원불교원불교 원불교원불교 원불교원불교 원불교원불교 원불교원불교 원불교원불교 원불교원불교 원불교원불교 원불교원불교 원불교원불교 원불교원불교 원불교원불교 원불교원불교 원불교원불교 원불교원불교 원불교원불교 원불교원불교 원불교원불교 원불교원불교 원불교원불교 원불교원불교 원불교</p>
+        <div class="swiper-container" id="ONE">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <img src="./img/ONE.jpg" alt="captain america" class="원불교" />
+                </div>
+                <div class="swiper-slide">Slide 2</div>
+                <div class="swiper-slide">Slide 3</div>
+
+
+            </div>
+            <!-- Add Arrows -->
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
         </div>
-        <div class="content" id="CHUN">
-            <img src="./img/CHUN.jpg" class="천주교" />
-            <p>천주교 천주교천주교 천주교천주교 천주교천주교 천주교천주교 천주교천주교 천주교천주교 천주교천주교 천주교천주교 천주교천주교 천주교천주교 천주교천주교 천주교천주교 천주교천주교 천주교천주교 천주교천주교 천주교천주교 천주교천주교 천주교천주교 천주교천주교 천주교천주교 천주교천주교 천주교천주교 천주교천주교 천주교천주교 천주교천주교 천주교천주교 천주교천주교 천주교천주교 천주교천주교 천주교천주교 천주교천주교 천주교천주교 천주교천주교 천주교천주교 천주교천주교 천주교천주교 천주교천주교 천주교천주교 천주교천주교 천주교천주교 천주교천주교 천주교천주교 천주교천주교 천주교천주교 천주교천주교 천주교천주교 천주교천주교 천주교천주교 천주교천주교 천주교천주교 천주교천주교 천주교천주교 천주교천주교 천주교천주교 천주교천주교 천주교천주교 천주교천주교 천주교천주교 천주교</p>
+
+        <!-- Swiper JS -->
+        <script src="./js/swiper.min.js"></script>
+
+        <!-- Initialize Swiper -->
+        <script>
+            var swiper = new Swiper('.swiper-container', {
+                navigation: {
+                    nextEl: '.swiper-button-next',
+                    prevEl: '.swiper-button-prev',
+                },
+            });
+
+        </script>
+        <div class="swiper-container" id = "CHUN">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <img src="./img/CHUN.jpg" class="천주교" />
+                </div>
+                <div class="swiper-slide">Slide 2</div>
+                <div class="swiper-slide">Slide 3</div>
+
+            </div>
+            <!-- Add Arrows -->
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
         </div>
-        <div class="contact"  id="WHERE" >
-+           <h1 class="contitle">CONTACT</h1>
+        <div class="contact" id="WHERE">
+            +
+            <h1 class="contitle">CONTACT</h1>
             <h2 class="contitle">
-            <a href="mailto:lg49oksk@hotmail.com" target="_blank"><img src="./img/KMARK.png" style="width: 100px; margin-left : 100px; margin-right: 100px; margin-bottom: 20px;"></a>
-            <a href="mailto:lg49oksk@hotmail.com" target="_blank"><img src="./img/BMARK.png" style="width: 100px; margin-left : 100px; margin-right: 100px; margin-bottom: 20px; "></a>
-            <a href="mailto:lg49oksk@hotmail.com" target="_blank"><img src="./img/CMARK.png" style="width: 100px; margin-left : 100px; margin-right: 100px; margin-bottom: 20px;"></a>
-             <a href="mailto:lg49oksk@hotmail.com" target="_blank"><img src="./img/OMARK.png" style="width: 100px; margin-left : 100px; margin-right: 100px; margin-bottom: 20px;"></a>
-             </h2>
-+        </div>
+                <a href="mailto:lg49oksk@hotmail.com" target="_blank"><img src="./img/KMARK.png" style="width: 100px; margin-left : 100px; margin-right: 100px; margin-bottom: 20px;"></a>
+                <a href="mailto:lg49oksk@hotmail.com" target="_blank"><img src="./img/BMARK.png" style="width: 100px; margin-left : 100px; margin-right: 100px; margin-bottom: 20px; "></a>
+                <a href="mailto:lg49oksk@hotmail.com" target="_blank"><img src="./img/CMARK.png" style="width: 100px; margin-left : 100px; margin-right: 100px; margin-bottom: 20px;"></a>
+                <a href="mailto:lg49oksk@hotmail.com" target="_blank"><img src="./img/OMARK.png" style="width: 100px; margin-left : 100px; margin-right: 100px; margin-bottom: 20px;"></a>
+            </h2>
+            + </div>
     </div>
     <!---->
 
@@ -164,6 +261,7 @@
     </div>
     <div class="go-top" style="display: block;"><a href="#title" id="homeup" i class="fa fa-angle-up"></a></div>
     <div class="go-bottom" style="display: block;"><a href="#bottom" id="homedown" i class="fa fa-angle-down"></a></div>
+    
 </body>
 
 </html>
