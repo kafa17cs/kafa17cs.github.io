@@ -1,0 +1,155 @@
+@charset "utf-8";
+
+.welcomeXE {
+    padding-top: 10px;
+    font-family: 'Noto Sans Korean', '나눔바른고딕', NanumBarunGothic, ng, '맑은 고딕', 'Malgun Gothic', '돋움', Dotum, '애플 SD 산돌고딕 Neo', 'Apple SD Gothic Neo', AppleGothic, Helvetica, sans-serif
+}
+
+.welcomeXE section {
+    width: 1200px;
+    margin: 0 auto
+}
+
+
+.welcomeXE .noti {
+    display: block;
+    padding: 28px 0 0;
+    margin: 0 0 12px;
+    font-size: 18px;
+    font-weight: 600;
+    color: #cda25a;
+    letter-spacing: -0.5px;
+    line-height: 20px
+}
+
+/* section.guide */
+
+.welcomeXE .guide {
+
+    padding-top: 20px
+}
+
+.welcomeXE .guide ul {
+    list-style: none;
+
+}
+
+.welcomeXE .guide li {
+    position: relative;
+    float: left;
+    width: 175px;
+    min-height: 140px;
+    padding: 0 0 0 0;
+    margin: 0 0 30px 0
+}
+
+.welcomeXE .guide h2 {
+    padding: 7px 24px 13px 0;
+    font-size: 17px;
+    font-weight: normal;
+    line-height: 23px;
+    color: #333
+}
+
+.welcomeXE .guide p {
+    padding: 0 5px 0 0;
+    font-size: 17px;
+    line-height: 22px;
+    color: #888;
+    text-align: justify;
+    letter-spacing: -1px
+}
+
+.welcomeXE .guide p a {
+    color: #444
+}
+
+.welcomeXE .guide p a:hover,
+.welcomeXE .guide p a:active,
+.welcomeXE .guide p a:focus {
+    color: #cda25a;
+    border-bottom: 1px solid #cda25a
+}
+
+
+.welcomeXE .guide .guidenews {
+    padding: 5px 0 0 50px;
+    width: 880px;
+}
+
+.welcomeXE .guide .newss h2 {
+    color: #7e6850;
+    font-size: 30px;
+    letter-spacing: -2px;
+    line-height: 115%;
+    border-right: 1px solid #dbd4c0;
+    height: 130px
+}
+
+
+@media all and (max-width: 479px) {
+
+
+
+    .welcomeXE .guide .newss h2 {
+        border-right: 0px !important;
+    }
+
+
+    .welcomeXE .noti {
+        display: block;
+        padding: 28px 0 0;
+        margin: 0 0 12px;
+        font-size: 18px;
+        font-weight: 600;
+        color: #cda25a;
+        letter-spacing: -0.5px;
+        line-height: 20px
+    }
+
+
+    .welcomeXE .guide .guidenews {
+        padding: 0 0 0 10px;
+        width: 100%;
+    }
+
+    .welcomeXE .guide .newss h2 {
+        color: #7e6850;
+        font-size: 30px;
+        letter-spacing: -2px;
+        line-height: 115%;
+        border-right: 1px solid #dbd4c0;
+        height: 130px
+    }
+
+    .welcomeXE {
+        padding-top: 0
+    }
+    .welcomeXE section {
+        width: 100%;
+        box-sizing: border-box;
+        overflow: hidden;
+    }
+    
+    .welcomeXE .guide {
+        padding: 0 14px 0 20px;
+        height: auto;
+        padding-top: 10px
+    }
+    .welcomeXE .guide li {
+        min-height: auto;
+        width: auto;
+        margin: 0 0 0 0;
+    }
+    .welcomeXE .features {
+        padding: 10px 14px 0 14px;
+        height: auto;
+    }
+    .welcomeXE .features .noti,
+    .welcomeXE .features .tit,
+    .welcomeXE .features .cont {
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto
+    }
+ 
