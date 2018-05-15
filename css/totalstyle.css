@@ -13,7 +13,6 @@
 .content-container {
     background-color: white;
     position: relative;
-    z-index: 0;
     padding: 0px;
     margin: 0 auto;
     overflow: hidden;
@@ -192,8 +191,9 @@
     }
 
     .content-container {
+        background-color: white;
         max-width: 100%;
-        margin: 30px auto 0;
+        margin: 0px auto 0;
     }
 
     #menu-toggle:checked ~ .content-container {
@@ -260,22 +260,27 @@ element.style {
 /* -- 컨텍트 페이지 -- */
 
 .contact {
-background-image : url(/img/bottomback3.jpg)
+background-image: url(bottomback3.jpg);
+    margin: 0;
 
 }
 
 h1.contitle {text-shadow : 1px 1px 2px #666666;
 color : #021C44;
 padding-top : 5px;
-    z-index:0;
 background-repeat : no-repeat;
-text-align : center;}
+text-align : center;
+    padding: 10px;
+margin: 0;
+}
 
 h2.contitle {text-shadow : 1px 1px 2px #666666;
 color : #021C44;
-z-index:0;
 background-repeat : no-repeat;
-text-align : center;}
+text-align : center;
+    padding: 10px;
+margin: 0;
+}
 
 
 </style >
