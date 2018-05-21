@@ -9,7 +9,7 @@
 }
 
 /* -- main content -- */
-
+@media (max-width: 1366px){
 .content-container {
     background-color: white;
     position: relative;
@@ -47,6 +47,17 @@
     max-width: 100%;
     /* 이미지의 최대사이즈 */
     width/***/
+    : auto;
+    /* only IE8 */
+    height: auto;
+    vertical-align: bottom;
+    margin: 0;
+    display: block;
+}
+
+.content section {
+    margin: 0 auto;
+     width/***/
     : auto;
     /* only IE8 */
     height: auto;
@@ -133,7 +144,7 @@
     line-height: 50px;
     z-index: 9999;
 }
-
+}
 
 /* -- 모바일 반응형 -- */
 
@@ -261,7 +272,7 @@ element.style {
 
 .contact {
 background-image: url(bottomback3.jpg);
-    margin: 0;
+margin: 0;
 
 }
 
@@ -270,7 +281,7 @@ color : #021C44;
 padding-top : 5px;
 background-repeat : no-repeat;
 text-align : center;
-    padding: 10px;
+padding: 10px;
 margin: 0;
 }
 
@@ -282,5 +293,17 @@ text-align : center;
 margin: 0;
 }
 
+
+/* -- 인트로 페이지 -- */
+
+.intro {
+background-image: url(INTRO.jpg);
+margin: 0;
+}
+
+h1.intro{
+color: dimgray;
+text-align: center;
+}
 
 </style >
