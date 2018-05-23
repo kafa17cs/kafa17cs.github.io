@@ -1,0 +1,418 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1 minimum-scale=1, maximum-scale=1">
+    <title>성무대 종교센터</title>
+    <link rel="stylesheet" href="./css/swiper.min.css">
+    <link rel="stylesheet" href="./css/welcome.css">
+    <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href='https://fonts.googleapis.com/css?family=Nanum+Gothic' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="./css/totalstyle.css">
+    <link rel="stylesheet" href="./css/menustyle.css">
+    <link rel="stylesheet" href="./css/mouseover.css">
+    <script src="./js/mouseover.js"></script>
+    <script src="js/indexscript.js"></script>
+    <script src="js/popup.js"></script>
+
+    <script type="text/javascript" src="./js/jquery.js"></script>
+    <script>
+        <!-- 리모트 컨트롤박스 -->
+        $(document).ready(function() {
+            $(function() {
+                $('#homeup').click(function() {
+                    $('body,html').animate({
+                        scrollTop: 0
+                    }, 800);
+                    return false;
+                });
+                var scrollHeight = $(document).height();
+                $('#homedown').click(function() {
+                    var n = $(document).height();
+                    $('body,html').animate({
+                        scrollTop: n
+                    }, 1200);
+                    return false;
+                });
+            });
+        });
+
+        <!-- 스크롤 속도 -->
+        jQuery(document).ready(function($) {
+            $(".scroll").click(function(event) {
+                event.preventDefault();
+                $('html,body').animate({
+                    scrollTop: $(this.hash).offset().top
+                }, 1000);
+            });
+        });
+        jQuery(document).ready(function($) {
+            $('#specialscroll').click(function(event) {
+                event.preventDefault();
+                $('html,body').animate({
+                    scrollTop: $(this.hash).offset().top
+                }, 1000);
+            });
+        });
+        jQuery(document).ready(function($) {
+            $('#specialscroll2').click(function(event) {
+                event.preventDefault();
+                $('html,body').animate({
+                    scrollTop: $(this.hash).offset().top
+                }, 1000);
+            });
+        });
+    </script>
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-117196579-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-117196579-1');
+    </script>
+    <!--슬라이드 스타일-->
+    <style>
+        html,
+        body {
+            position: relative;
+            height: 100%;
+        }
+
+        body {
+            background: #eee;
+            font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+            font-size: 14px;
+            color: #000;
+            margin: 0;
+            padding: 0;
+        }
+
+        .swiper-container {
+            width: 100%;
+            height: 100%;
+        }
+
+        .swiper-slide {
+            text-align: center;
+            font-size: 18px;
+            background: #fff;
+            /* Center slide text vertically */
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: -webkit-flex;
+            display: flex;
+            -webkit-box-pack: center;
+            -ms-flex-pack: center;
+            -webkit-justify-content: center;
+            justify-content: center;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
+            -webkit-align-items: center;
+            align-items: center;
+        }
+    </style>
+</head>
+
+<body link="#ffffff" vlink="#ffffff" alink="#ffffff" style="max-width: 1366px">
+
+    <input type="checkbox" id="menu-toggle" />
+    <label for="menu-toggle" class="menu-icon"><i class="fa fa-bars"></i></label>
+    <!--타이틀 메뉴-->
+    <div class="content-container">
+        <div class="site-title" id="title">
+            <a href="#page" id="logo-top"><img src="./img/hp logo 208_70.png" style="display:inline-block; " ></a>
+            <span class="please">
+            <nav id="site-navigation" class="main-navigation" style="display:inline-block;  ">
+				<ul class="nav single-page-nav">
+				<li><a href="#INTRO" style="text-decoration:none" class="scroll">센터소개</a></li>
+				<li><a href="#NEWS" style="text-decoration:none" class="scroll">소식</a></li>
+				<li><a href="#INSTITUTION" style="text-decoration:none" class="scroll">기관</a></li>
+				<li><a href="#WHERE" style="text-decoration:none" class="scroll">안내</a></li>
+				<li><a href="#WHERE" id="specialscroll2" style="text-decoration:none">오시는 길</a></li>		
+				</ul>		
+		    </nav>
+            </span>
+        </div>
+        <p> </p>
+        <!--첫 소개 슬라이드-->
+        <div class="content" id="ALL">
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <img src="./img/KI.jpg" class="기독교" />
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./img/BUL.jpg" class="불교" />
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./img/CHUN.jpg" class="천주교" />
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./img/ONE.jpg" class="원불교" />
+                    </div>
+
+                </div>
+                <!-- Add Pagination -->
+                <div class="swiper-pagination"></div>
+            </div>
+        </div>
+        <!------- 센터 소개 ------->
+        <div class="content-container" id="INTRO">
+            <div class="intro">
+                <h1 class="intro">
+                    공군사관학교<br /> 성무대 종교센터 홈페이지 방문을<br /> 진심으로 환영합니다.</h1>
+                <h2 class="contitle">
+                    <p class="mp1">1949년 개교한 공군사관학교는<br /> '배우고 익혀서 몸과 마음을 <br /> 조국과 하늘에 바친다' 는 교훈 아래 <br /> 정예 공군 장요 양성 임무에 매진하여<br /> 대한민국 영공수호 역사와 함께 해 왔습니다.<br /></p>
+                    <p class="mp2"><br />" 생도의 신앙전력화와 사기진작을 위해 최선을 다하고 있습니다 "<br /><br /></p>
+                </h2>
+            </div>
+        </div>
+
+        <!------- 소식 ------->
+        <div class="welcomeXE" id="NEWS">
+            <section class="guide">
+                <span class="noti" style="color:#ae9579 !important">&nbsp;소식<br /><br /></span>
+            </section>
+        </div>
+
+        <div class="content-container" style="width: 70%;">
+            <div class="content">
+                <div class="swiper-container">
+                    <div class="swiper-wrapper" id="KI">
+                        <div class="swiper-slide">
+                            <img src="./img/news1.jpg" />
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./img/news2.jpg" />
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./img/KI2.jpg" class="기독교" />
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./img/KI3.jpg" class="기독교" />
+                        </div>
+
+                    </div>
+                    <!-- Add Pagination -->
+                    <div class="swiper-pagination"></div>
+                    <!-- Add Arrows -->
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="welcomeXE" id="INSTITUTION" style="display: block">
+            <section class="guide">
+                <ul>
+                    <li class="newss">
+                        <h2 style="line-height: 160%;">
+                            &emsp; 연례
+                            <br>&emsp; 행사
+                        </h2>
+                    </li>
+                    <li class="guidenews" style="font-weight: 300; text-align: center;">
+                        <p>
+                            <br /> 1월 &ensp; 기초군사훈련 독려 &emsp;&emsp;&emsp;&emsp;&ensp; 2월 &ensp; 졸업 기념 행사 &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+                        </p>
+                        <p>
+                            4월 &ensp; 새신자 등록 행사 &emsp;&emsp;&emsp;&emsp;&emsp; 7월 &ensp; 하계군사훈련 독려
+
+                        </p>
+                        <p>
+                            8월 &ensp; 하계 생도 수련회 &emsp;&emsp;&emsp;&emsp;&emsp; 12월 &ensp; 동계 생도 수련회
+                        </p>
+
+                    </li>
+
+                </ul>
+            </section>
+        </div>
+    </div>
+
+    <div class="content-container">
+        <div class="content">
+            <figure class="snip1200" style="margin-left: 2%; margin-right: 2%;">
+                <img src="./img/SELECTKI.jpg" alt="sq-sample32" />
+                <figcaption>
+                    <p>Perseverance must finish its work so that you may be mature and complete, not lacking anything. </p>
+                    <div class="heading">
+                        <h2>성무<span>교회</span></h2>
+                    </div>
+                </figcaption>
+                <a href="#"></a>
+            </figure>
+            <figure class="snip1200">
+                <img src="./img/SELECTCH.jpg" alt="천주교" />
+                <figcaption>
+                    <p>Let us not become veary in doing good, for at the proper time we will reap a harvest if we do not give up. </p>
+                    <div class="heading">
+                        <h2>성무<span>성당</span></h2>
+                    </div>
+                </figcaption>
+                <a href="#"></a>
+            </figure>
+            <figure class="snip1200" style="margin-left: 2%; margin-right: 2%;">
+                <img src="./img/SELECTONE.jpg" alt="원불교" />
+                <figcaption>
+                    <p>사람이 무슨 일을 할 때에 먼저 순과 역을 잘 구분해서 순으로 주로하여 한다면 성공하지 못할 일이 거의 없으리라. </p>
+                    <div class="heading">
+                        <h2>성무<span>교당</span></h2>
+                    </div>
+                </figcaption>
+                <a href="#"></a>
+            </figure>
+            <figure class="snip1200">
+                <img src="./img/SELECTBUL.jpg" alt="불교" />
+                <figcaption>
+                    <p>우리의 마음은 살아있는 생명이요, 그것이 곧 나라는 존재이다.</p>
+                    <div class="heading">
+                        <h2>성무<span>호국사</span></h2>
+                    </div>
+                </figcaption>
+                <a href="#"></a>
+            </figure>
+        </div>
+    </div>
+
+    <!--소식 슬라이드-->
+    <div class="content-container">
+        <div class="content">
+            <div class="swiper-container">
+                <div class="swiper-wrapper" id="KI">
+                    <div class="swiper-slide">
+                        <img src="./img/KI.jpg" class="기독교" />
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./img/KI1.jpg" class="기독교" />
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./img/KI2.jpg" class="기독교" />
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./img/KI3.jpg" class="기독교" />
+                    </div>
+
+                </div>
+                <!-- Add Pagination -->
+                <div class="swiper-pagination"></div>
+                <!-- Add Arrows -->
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+            </div>
+        </div>
+        <div class="welcomeXE">
+            <section class="guide">
+                <span class="noti" style="color:#ae9579 !important">&nbsp;News</span>
+                <ul>
+                    <li class="newss">
+                        <h2>
+                            성무
+                            <br> 교회
+                        </h2>
+                    </li>
+                    <li class="guidenews" style="font-weight: 500">
+                        <p>
+                            성무교회 입니다.
+                        </p>
+                        <p>
+                            67기 전산정보과학과 김진혁, 윤동현생도가 제작했습니다.
+                        </p>
+                        <p>
+                            교수님 사랑합니다.
+                        </p>
+                    </li>
+                </ul>
+            </section>
+        </div>
+
+        <!-- Swiper JS -->
+        <script src="./js/swiper.min.js"></script>
+
+        <!-- Initialize Swiper -->
+        <script>
+            var swiper = new Swiper('.swiper-container', {
+                loop: true,
+                autoHeight: true,
+                spaceBetween: 30,
+                centeredSlides: true,
+                autoplay: {
+                    delay: 5000,
+                    disableOnInteraction: false,
+                },
+                pagination: {
+                    el: '.swiper-pagination',
+                    dynamicBullets: true,
+                },
+                navigation: {
+                    nextEl: '.swiper-button-next',
+                    prevEl: '.swiper-button-prev',
+                },
+            });
+        </script>
+
+    </div>
+
+    <!--Contact-->
+    <div class="content-container" id="WHERE">
+        <div class="contact">
+            <div id="layer1" class="pop-layer">
+                <div class="pop-container">
+                    <div class="pop-conts">
+                        <!--content //-->
+                        <p class="ctxt mb20">Thank you.<br> Your registration was submitted successfully.<br> Selected invitees will be notified by e-mail on JANUARY 24th.<br><br> Hope to see you soon!
+                        </p>
+
+                        <div class="btn-r">
+                            <a href="#" class="btn-layerClose">Close</a>
+                        </div>
+                        <!--// content-->
+                    </div>
+                </div>
+            </div>
+
+            <h1 class="contitle">CONTACT</h1>
+            <h2 class="contitle">
+
+                <a href="#layer1" class="btn-example"><img src="./img/KMARK.png" style="width: 100px; margin-left : 100px; margin-right: 100px; margin-bottom: 20px;"></a>
+
+                <a><img src="./img/BMARK.png" style="width: 100px; margin-left : 100px; margin-right: 100px; margin-bottom: 20px; "></a>
+                <a><img src="./img/CMARK.png" style="width: 100px; margin-left : 100px; margin-right: 100px; margin-bottom: 20px;"></a>
+                <a><img src="./img/OMARK.png" style="width: 100px; margin-left : 100px; margin-right: 100px; margin-bottom: 20px;"></a>
+            </h2>
+        </div>
+    </div>
+    <!---->
+
+    <div class="bottom" style="background: #021C44">
+        <img src="./img/bottom 2.jpg" style="display: block;" />
+        <p style="font-size: 1.5em">충북 청주시 상당구 남일면 단재로 635 사서함 335-1</p>
+        <p style="font-size: 1.2em">우편번호 28187 (TEL) 043-290-6114</p>
+
+        COPYRIGHT(c)2018 KOREA AIRFORCE ACADEMY. ALL RIGHT RESERVED.<br />
+        <br /> 위 홈페이지는 1366 X 760 이하 해상도를 기준으로 제작하였습니다
+    </div>
+    <div class="slideout-sidebar">
+        <ul class="menu">
+            <li><a href="#INTRO" style="text-decoration:none" class="scroll">센터소개</a></li>
+            <li><a href="#NEWS" style="text-decoration:none" class="scroll">소식</a></li>
+            <li><a href="#INSTITUTION" style="text-decoration:none" class="scroll">기관</a></li>
+            <li><a href="#CHUN" style="text-decoration:none" class="scroll">안내</a></li>
+            <li><a href="#WHERE" class="fa fa-map" id="specialscroll" style="text-decoration:none"></a></li>
+            <li><a href="http://www.afa.ac.kr" class="fa fa-home" style="text-decoration:none" target="_blank"></a></li>
+        </ul>
+    </div>
+    <div class="go-top" style="display: block;"><a href="#title" id="homeup" i class="fa fa-angle-up"></a></div>
+    <div class="go-bottom" style="display: block;"><a href="#bottom" id="homedown" i class="fa fa-angle-down"></a></div>
+
+</body>
+
+</html>
