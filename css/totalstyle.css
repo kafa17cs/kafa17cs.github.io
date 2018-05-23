@@ -6,11 +6,16 @@
     font-size: 1em;
     margin: 0;
     background-color: white;
+    display: inline-block;
+    margin-right: auto;
+    margin-left: auto;
+    display: table;
 }
 
 /* -- main content -- */
-@media (max-width: 1366px){
+
 .content-container {
+    display: block;
     background-color: white;
     position: relative;
     padding: 0px;
@@ -20,6 +25,8 @@
 }
 
 .site-title {
+    display: block;
+    max-width: 1318px;
     z-index: 9;
     text-align: left;
     position: fixed;
@@ -57,7 +64,7 @@
 
 .content section {
     margin: 0 auto;
-     width/***/
+    width/***/
     : auto;
     /* only IE8 */
     height: auto;
@@ -144,7 +151,7 @@
     line-height: 50px;
     z-index: 9999;
 }
-}
+
 
 /* -- 모바일 반응형 -- */
 
@@ -271,39 +278,144 @@ element.style {
 /* -- 컨텍트 페이지 -- */
 
 .contact {
-background-image: url(bottomback3.jpg);
-margin: 0;
+    background-image: url(bottomback3.jpg);
+    margin: 0;
 
 }
 
-h1.contitle {text-shadow : 1px 1px 2px #666666;
-color : #021C44;
-padding-top : 5px;
-background-repeat : no-repeat;
-text-align : center;
-padding: 10px;
-margin: 0;
-}
-
-h2.contitle {text-shadow : 1px 1px 2px #666666;
-color : #021C44;
-background-repeat : no-repeat;
-text-align : center;
+h1.contitle {
+    text-shadow: 1px 1px 2px #666666;
+    color: #021C44;
+    padding-top: 5px;
+    background-repeat: no-repeat;
+    text-align: center;
     padding: 10px;
-margin: 0;
+    margin: 0;
+}
+
+h2.contitle {
+    text-shadow: 1px 1px 2px #666666;
+    color: #021C44;
+    background-repeat: no-repeat;
+    text-align: center;
+    padding: 10px;
+    margin: 0;
 }
 
 
 /* -- 인트로 페이지 -- */
 
 .intro {
-background-image: url(INTRO.jpg);
-margin: 0;
+    background-image: url(INTRO.jpg);
+    margin: 0;
 }
 
-h1.intro{
-color: dimgray;
-text-align: center;
+h1.intro {
+    padding-top: 5%;
+    padding-left: 10%;
+    color: dimgray;
+    font-size: 2em;
+    text-align: left;
+    font-weight: 100;
+    line-height: 170%
+}
+
+.mp1 {
+    font-weight: 100;
+    font-size: 1em;
+    
+    width: 80%;
+    height: 50%;
+    padding-left: 10%;
+    text-align: right;
+    line-height: 200%;
+
+}
+
+.mp2 {
+    border-color: #021C44;
+    border-style: solid;
+    border-width: thick;
+    font-weight: 450;
+    font-size: 1.25em;
+    width: 70%;
+    height: 50%;
+    margin-left: 15%;
+    text-align: center;
+    line-height: 200%;
+
+}
+
+.pop-layer .pop-container {
+  padding: 20px 25px;
+}
+
+.pop-layer p.ctxt {
+  color: #666;
+  line-height: 25px;
+}
+
+.pop-layer .btn-r {
+  width: 100%;
+  margin: 10px 0 20px;
+  padding-top: 10px;
+  border-top: 1px solid #DDD;
+  text-align: right;
+}
+
+.pop-layer {
+  display: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 410px;
+  height: auto;
+  background-color: #fff;
+  border: 5px solid #3571B5;
+  z-index: 10;
+}
+
+.dim-layer {
+  display: none;
+  position: fixed;
+  _position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 100;
+}
+
+.dim-layer .dimBg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #000;
+  opacity: .5;
+  filter: alpha(opacity=50);
+}
+
+.dim-layer .pop-layer {
+  display: block;
+}
+
+a.btn-layerClose {
+  display: inline-block;
+  height: 25px;
+  padding: 0 14px 0;
+  border: 1px solid #304a8a;
+  background-color: #3f5a9d;
+  font-size: 13px;
+  color: #fff;
+  line-height: 25px;
+}
+
+a.btn-layerClose:hover {
+  border: 1px solid #091940;
+  background-color: #1f326a;
+  color: #fff;
 }
 
 </style >

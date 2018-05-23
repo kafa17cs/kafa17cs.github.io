@@ -15,6 +15,7 @@
     <link rel="stylesheet" href="./css/mouseover.css">
     <script src="./js/mouseover.js"></script>
     <script src="js/indexscript.js"></script>
+    <script src="js/popup.js"></script>
 
     <script type="text/javascript" src="./js/jquery.js"></script>
     <script>
@@ -64,7 +65,6 @@
             });
         });
     </script>
-
 
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-117196579-1"></script>
@@ -121,7 +121,7 @@
     </style>
 </head>
 
-<body link="#ffffff" vlink="#ffffff" alink="#ffffff">
+<body link="#ffffff" vlink="#ffffff" alink="#ffffff" style="max-width: 1366px">
 
     <input type="checkbox" id="menu-toggle" />
     <label for="menu-toggle" class="menu-icon"><i class="fa fa-bars"></i></label>
@@ -132,10 +132,10 @@
             <span class="please">
             <nav id="site-navigation" class="main-navigation" style="display:inline-block;  ">
 				<ul class="nav single-page-nav">
-				<li><a href="#ABOUT" style="text-decoration:none" class="scroll">센터소개</a></li>
-				<li><a href="#BUL" style="text-decoration:none" class="scroll">소식</a></li>
-				<li><a href="#ONE" style="text-decoration:none" class="scroll">기관</a></li>
-				<li><a href="#CHUN" style="text-decoration:none" class="scroll">안내</a></li>
+				<li><a href="#INTRO" style="text-decoration:none" class="scroll">센터소개</a></li>
+				<li><a href="#NEWS" style="text-decoration:none" class="scroll">소식</a></li>
+				<li><a href="#INSTITUTION" style="text-decoration:none" class="scroll">기관</a></li>
+				<li><a href="#WHERE" style="text-decoration:none" class="scroll">안내</a></li>
 				<li><a href="#WHERE" id="specialscroll2" style="text-decoration:none">오시는 길</a></li>		
 				</ul>		
 		    </nav>
@@ -164,47 +164,86 @@
                 <div class="swiper-pagination"></div>
             </div>
         </div>
-        <div class="content-container" id="ABOUT">
-        <div class="intro">
-            <h1 class="intro">방문을 환영합니다!</h1>
-            <h2 class="contitle">
-                <a><img src="./img/KMARK.png" style="width: 100px; margin-left : 100px; margin-right: 100px; margin-bottom: 20px;"></a>
-            </h2>
+        <!------- 센터 소개 ------->
+        <div class="content-container" id="INTRO">
+            <div class="intro">
+                <h1 class="intro">
+                    공군사관학교<br /> 성무대 종교센터 홈페이지 방문을<br /> 진심으로 환영합니다.</h1>
+                <h2 class="contitle">
+                    <p class="mp1">1949년 개교한 공군사관학교는<br /> '배우고 익혀서 몸과 마음을 <br /> 조국과 하늘에 바친다' 는 교훈 아래 <br /> 정예 공군 장요 양성 임무에 매진하여<br /> 대한민국 영공수호 역사와 함께 해 왔습니다.<br /></p>
+                    <p class="mp2"><br />" 생도의 신앙전력화와 사기진작을 위해 최선을 다하고 있습니다 "<br /><br /></p>
+                </h2>
+            </div>
         </div>
-    </div>
-        <div class="welcomeXE">
+
+        <!------- 소식 ------->
+        <div class="welcomeXE" id="NEWS">
             <section class="guide">
-                <span class="noti" style="color:#ae9579 !important">&nbsp;News</span>
+                <span class="noti" style="color:#ae9579 !important">&nbsp;소식<br /><br /></span>
+            </section>
+        </div>
+
+        <div class="content-container" style="width: 70%;">
+            <div class="content">
+                <div class="swiper-container">
+                    <div class="swiper-wrapper" id="KI">
+                        <div class="swiper-slide">
+                            <img src="./img/news1.jpg" />
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./img/news2.jpg" />
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./img/KI2.jpg" class="기독교" />
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./img/KI3.jpg" class="기독교" />
+                        </div>
+
+                    </div>
+                    <!-- Add Pagination -->
+                    <div class="swiper-pagination"></div>
+                    <!-- Add Arrows -->
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="welcomeXE" id="INSTITUTION" style="display: block">
+            <section class="guide">
                 <ul>
                     <li class="newss">
-                        <h2>
-                            성무대
-                            <br> 종교센터
+                        <h2 style="line-height: 160%;">
+                            &emsp; 연례
+                            <br>&emsp; 행사
                         </h2>
                     </li>
-                    <li class="guidenews" style="font-weight: 500">
+                    <li class="guidenews" style="font-weight: 300; text-align: center;">
                         <p>
-                            성무대 종교센터 입니다.
+                            <br /> 1월 &ensp; 기초군사훈련 독려 &emsp;&emsp;&emsp;&emsp;&ensp; 2월 &ensp; 졸업 기념 행사 &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
                         </p>
                         <p>
-                            67기 전산정보과학과 김진혁, 윤동현생도가 제작했습니다.
+                            4월 &ensp; 새신자 등록 행사 &emsp;&emsp;&emsp;&emsp;&emsp; 7월 &ensp; 하계군사훈련 독려
+
                         </p>
                         <p>
-                            교수님 사랑합니다.
+                            8월 &ensp; 하계 생도 수련회 &emsp;&emsp;&emsp;&emsp;&emsp; 12월 &ensp; 동계 생도 수련회
                         </p>
+
                     </li>
+
                 </ul>
             </section>
         </div>
     </div>
-   
 
     <div class="content-container">
         <div class="content">
-            <figure class="snip1200">
-                <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/sq-sample32.jpg" alt="sq-sample32" />
+            <figure class="snip1200" style="margin-left: 2%; margin-right: 2%;">
+                <img src="./img/SELECTKI.jpg" alt="sq-sample32" />
                 <figcaption>
-                    <p>That's the difference between me and the rest of the world! Happiness isn't good enough for me! I demand euphoria! </p>
+                    <p>Perseverance must finish its work so that you may be mature and complete, not lacking anything. </p>
                     <div class="heading">
                         <h2>성무<span>교회</span></h2>
                     </div>
@@ -212,19 +251,19 @@
                 <a href="#"></a>
             </figure>
             <figure class="snip1200">
-                <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/sq-sample32.jpg" alt="sq-sample32" />
+                <img src="./img/SELECTCH.jpg" alt="천주교" />
                 <figcaption>
-                    <p>That's the difference between me and the rest of the world! Happiness isn't good enough for me! I demand euphoria! </p>
+                    <p>Let us not become veary in doing good, for at the proper time we will reap a harvest if we do not give up. </p>
                     <div class="heading">
                         <h2>성무<span>성당</span></h2>
                     </div>
                 </figcaption>
                 <a href="#"></a>
             </figure>
-            <figure class="snip1200">
-                <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/sq-sample32.jpg" alt="sq-sample32" />
+            <figure class="snip1200" style="margin-left: 2%; margin-right: 2%;">
+                <img src="./img/SELECTONE.jpg" alt="원불교" />
                 <figcaption>
-                    <p>That's the difference between me and the rest of the world! Happiness isn't good enough for me! I demand euphoria! </p>
+                    <p>사람이 무슨 일을 할 때에 먼저 순과 역을 잘 구분해서 순으로 주로하여 한다면 성공하지 못할 일이 거의 없으리라. </p>
                     <div class="heading">
                         <h2>성무<span>교당</span></h2>
                     </div>
@@ -232,9 +271,9 @@
                 <a href="#"></a>
             </figure>
             <figure class="snip1200">
-                <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/sq-sample32.jpg" alt="sq-sample32" />
+                <img src="./img/SELECTBUL.jpg" alt="불교" />
                 <figcaption>
-                    <p>That's the difference between me and the rest of the world! Happiness isn't good enough for me! I demand euphoria! </p>
+                    <p>우리의 마음은 살아있는 생명이요, 그것이 곧 나라는 존재이다.</p>
                     <div class="heading">
                         <h2>성무<span>호국사</span></h2>
                     </div>
@@ -244,7 +283,7 @@
         </div>
     </div>
 
-    <!--기독교 슬라이드-->
+    <!--소식 슬라이드-->
     <div class="content-container">
         <div class="content">
             <div class="swiper-container">
@@ -325,9 +364,26 @@
     <!--Contact-->
     <div class="content-container" id="WHERE">
         <div class="contact">
+            <div id="layer1" class="pop-layer">
+                <div class="pop-container">
+                    <div class="pop-conts">
+                        <!--content //-->
+                        <p class="ctxt mb20">Thank you.<br> Your registration was submitted successfully.<br> Selected invitees will be notified by e-mail on JANUARY 24th.<br><br> Hope to see you soon!
+                        </p>
+
+                        <div class="btn-r">
+                            <a href="#" class="btn-layerClose">Close</a>
+                        </div>
+                        <!--// content-->
+                    </div>
+                </div>
+            </div>
+
             <h1 class="contitle">CONTACT</h1>
             <h2 class="contitle">
-                <a><img src="./img/KMARK.png" style="width: 100px; margin-left : 100px; margin-right: 100px; margin-bottom: 20px;"></a>
+
+                <a href="#layer1" class="btn-example"><img src="./img/KMARK.png" style="width: 100px; margin-left : 100px; margin-right: 100px; margin-bottom: 20px;"></a>
+
                 <a><img src="./img/BMARK.png" style="width: 100px; margin-left : 100px; margin-right: 100px; margin-bottom: 20px; "></a>
                 <a><img src="./img/CMARK.png" style="width: 100px; margin-left : 100px; margin-right: 100px; margin-bottom: 20px;"></a>
                 <a><img src="./img/OMARK.png" style="width: 100px; margin-left : 100px; margin-right: 100px; margin-bottom: 20px;"></a>
@@ -341,14 +397,15 @@
         <p style="font-size: 1.5em">충북 청주시 상당구 남일면 단재로 635 사서함 335-1</p>
         <p style="font-size: 1.2em">우편번호 28187 (TEL) 043-290-6114</p>
 
-        COPYRIGHT(c)2018 KOREA AIRFORCE ACADEMY. ALL RIGHT RESERVED.
+        COPYRIGHT(c)2018 KOREA AIRFORCE ACADEMY. ALL RIGHT RESERVED.<br />
+        <br /> 위 홈페이지는 1366 X 760 이하 해상도를 기준으로 제작하였습니다
     </div>
     <div class="slideout-sidebar">
         <ul class="menu">
-            <li><a href="#KI" style="text-decoration:none" class="scroll">성무교회</a></li>
-            <li><a href="#BUL" style="text-decoration:none" class="scroll">호국당</a></li>
-            <li><a href="#ONE" style="text-decoration:none" class="scroll">성무교당</a></li>
-            <li><a href="#CHUN" style="text-decoration:none" class="scroll">성무성당</a></li>
+            <li><a href="#INTRO" style="text-decoration:none" class="scroll">센터소개</a></li>
+            <li><a href="#NEWS" style="text-decoration:none" class="scroll">소식</a></li>
+            <li><a href="#INSTITUTION" style="text-decoration:none" class="scroll">기관</a></li>
+            <li><a href="#CHUN" style="text-decoration:none" class="scroll">안내</a></li>
             <li><a href="#WHERE" class="fa fa-map" id="specialscroll" style="text-decoration:none"></a></li>
             <li><a href="http://www.afa.ac.kr" class="fa fa-home" style="text-decoration:none" target="_blank"></a></li>
         </ul>
