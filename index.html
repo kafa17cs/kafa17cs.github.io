@@ -66,6 +66,26 @@
             });
         });
     </script>
+    
+    <script>
+
+
+    //z-index 를 서로 바꿔주는 메서드 2개 작성 (z-index 는 숫자가 클수록 힘이 쎄다-_-!)
+ 
+    function z_arg()
+    {
+      document.getElementById("zlayer1").style.zIndex = “2”;  //자바스크립트에서 접근할 때는 z-index 가 아니라 zIndex 이다.
+      document.getElementById("zlayer2").style.zIndex = “1”;
+    }
+
+
+    function z_arange()
+    {
+      document.getElementById("zlayer1").style.zIndex = “1”;
+      document.getElementById("zlayer2").style.zIndex = “2”;
+    }
+        
+  </script>
 
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-117196579-1"></script>
@@ -221,52 +241,72 @@
                 <span class="noti" style="color:#ae9579 !important">&nbsp;기관<br /><br /></span>
             </section>
         </div>
-        
+
         <div class="content" style="margin: auto;">
-           <div style="margin: auto;"> 
-            <figure class="snip1200" style="margin-left: 3%; margin-right: 2%;">
-                <img src="./img/SELECTKI.jpg" alt="sq-sample32" />
-                <figcaption>
-                    <p>Perseverance must finish its work so that you may be mature and complete, not lacking anything. </p>
-                    <div class="heading">
-                        <h2>성무<span>교회</span></h2>
-                    </div>
-                </figcaption>
-                <a href="#"></a>
-            </figure>
-           
-               <figure class="snip1200">
-                <img src="./img/SELECTCH.jpg" alt="천주교" />
-                <figcaption>
-                    <p>Let us not become veary in doing good, for at the proper time we will reap a harvest if we do not give up. </p>
-                    <div class="heading">
-                        <h2>성무<span>성당</span></h2>
-                    </div>
-                </figcaption>
-                <a href="#"></a>
-            </figure>
+            <div style="margin: auto;">
+                <figure class="snip1200" style="margin-left: 3%; margin-right: 2%;">
+                    <img src="./img/SELECTKI.jpg" alt="sq-sample32" />
+                    <figcaption>
+                        <p>Perseverance must finish its work so that you may be mature and complete, not lacking anything. </p>
+                        <div class="heading">
+                            <h2>성무<span>교회</span></h2>
+                        </div>
+                    </figcaption>
+                    <a href="#"></a>
+                </figure>
+
+                <figure class="snip1200">
+                    <img src="./img/SELECTCH.jpg" alt="천주교" />
+                    <figcaption>
+                        <p>Let us not become veary in doing good, for at the proper time we will reap a harvest if we do not give up. </p>
+                        <div class="heading">
+                            <h2>성무<span>성당</span></h2>
+                        </div>
+                    </figcaption>
+                    <a href="#"></a>
+                </figure>
+
+               
+               <div onclick="z_arange();">
+                <figure class="snip1200" style="margin-left: 3%; margin-right: 2%;" onclick="z_arange();">
+                    <img src="./img/SELECTONE.jpg" alt="원불교" onclick="z_arange();"/>
+                    <figcaption>
+                        <p>사람이 무슨 일을 할 때에 먼저 순과 역을 잘 구분해서 순으로 주로하여 한다면 성공하지 못할 일이 거의 없으리라. </p>
+                        <div class="heading">
+                            <h2>성무<span>교당</span></h2>
+                        </div>
+                    </figcaption>
+                    
+                </figure>
+                </div>
+                
+                
+                <div onclick="z_arg();">
+                <figure class="snip1200" onclick="z_arg();" >
+                    <img src="./img/SELECTBUL.jpg" alt="불교" onclick="z_arg();"/>
+                    <figcaption>
+                        <p>우리의 마음은 살아있는 생명이요, 그것이 곧 나라는 존재이다.</p>
+                        <div class="heading">
+                            <h2>성무<span>호국사</span></h2>
+                        </div>
+                    </figcaption>
+                    
+                </figure>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+
+    <div class="content-container">
+        <div class="content" style="height: 500px;">
+
+            <div id="zlayer1" style="width:200px; height:500px; position:absolute; left:10px; top:51px; background-color:#FFFF00; z-index:1;" onclick="z_arange();">
+                첫번째 레이어
+            </div>
             
-          <figure class="snip1200" style="margin-left: 3%; margin-right: 2%;">
-                <img src="./img/SELECTONE.jpg" alt="원불교" />
-                <figcaption>
-                    <p>사람이 무슨 일을 할 때에 먼저 순과 역을 잘 구분해서 순으로 주로하여 한다면 성공하지 못할 일이 거의 없으리라. </p>
-                    <div class="heading">
-                        <h2>성무<span>교당</span></h2>
-                    </div>
-                </figcaption>
-                <a href="#"></a>
-            </figure>
-            
-            <figure class="snip1200">
-                <img src="./img/SELECTBUL.jpg" alt="불교" />
-                <figcaption>
-                    <p>우리의 마음은 살아있는 생명이요, 그것이 곧 나라는 존재이다.</p>
-                    <div class="heading">
-                        <h2>성무<span>호국사</span></h2>
-                    </div>
-                </figcaption>
-                <a href="#"></a>
-            </figure>
+            <div id="zlayer2" style="width:200px; height:500px; position:absolute; left:30px; top:100px; background-color:#00FFFF; z-index:2;" onclick= "z_arg();" >
+                두번째 레이어
             </div>
         </div>
     </div>
