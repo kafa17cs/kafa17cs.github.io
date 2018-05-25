@@ -38,6 +38,7 @@
     right: 0px;
     height: 80px;
     width: 100% transition: all 100ms ease-in-out;
+    margin: auto;
 }
 
 .site-title p {
