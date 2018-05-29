@@ -14,9 +14,9 @@
     <link rel="stylesheet" href="./css/menustyle.css">
     <link rel="stylesheet" href="./css/mouseover.css">
     <link rel="stylesheet" href="./css/popup.css">
-    <script src="js/jquery.js"></script>
+    <script src="./js/jquery.js"></script>
     <script src="./js/mouseover.js"></script>
-    <script src="js/popup.js"></script>
+    <script src="./js/popup.js"></script>
 
     <script type="text/javascript" src="./js/jquery.js"></script>
     <script>
@@ -72,19 +72,35 @@
 
     //z-index 를 서로 바꿔주는 메서드 2개 작성 (z-index 는 숫자가 클수록 힘이 쎄다-_-!)
  
-    function z_arg()
+    function z_a()
     {
-      document.getElementById("zlayer1").style.zIndex = “2”;  //자바스크립트에서 접근할 때는 z-index 가 아니라 zIndex 이다.
-      document.getElementById("zlayer2").style.zIndex = “1”;
+      document.getElementById("zlayer_a").style.zIndex = 4;  
+      document.getElementById("zlayer_b").style.zIndex = 3;
+      document.getElementById("zlayer_c").style.zIndex = 2;
+      document.getElementById("zlayer_d").style.zIndex = 1;
     }
-
-
-    function z_arange()
+    function z_b()
     {
-      document.getElementById("zlayer1").style.zIndex = “1”;
-      document.getElementById("zlayer2").style.zIndex = “2”;
+      document.getElementById("zlayer_a").style.zIndex = 1;  
+      document.getElementById("zlayer_b").style.zIndex = 4;
+      document.getElementById("zlayer_c").style.zIndex = 3;
+      document.getElementById("zlayer_d").style.zIndex = 2;
     }
-        
+         function z_c()
+    {
+      document.getElementById("zlayer_a").style.zIndex = 2;  
+      document.getElementById("zlayer_b").style.zIndex = 1;
+      document.getElementById("zlayer_c").style.zIndex = 4;
+      document.getElementById("zlayer_d").style.zIndex = 3;
+    }
+         function z_d()
+    {
+      document.getElementById("zlayer_a").style.zIndex = 3;  
+      document.getElementById("zlayer_b").style.zIndex = 2;
+      document.getElementById("zlayer_c").style.zIndex = 1;
+      document.getElementById("zlayer_d").style.zIndex = 4;
+    }
+            
   </script>
 
     <!-- Global site tag (gtag.js) - Google Analytics -->
@@ -244,32 +260,32 @@
 
         <div class="content" style="margin: auto;">
             <div style="margin: auto;">
+               <div onclick="z_a();">
                 <figure class="snip1200" style="margin-left: 3%; margin-right: 2%;">
-                    <img src="./img/SELECTKI.jpg" alt="sq-sample32" />
+                    <img src="./img/SELECTKI.jpg" alt="sq-sample32" onclick="z_a();" />
                     <figcaption>
                         <p>Perseverance must finish its work so that you may be mature and complete, not lacking anything. </p>
                         <div class="heading">
                             <h2>성무<span>교회</span></h2>
                         </div>
                     </figcaption>
-                    <a href="#"></a>
                 </figure>
-
+                </div>
+                <div onclick="z_b();">
                 <figure class="snip1200">
-                    <img src="./img/SELECTCH.jpg" alt="천주교" />
+                    <img src="./img/SELECTCH.jpg" alt="천주교" onclick="z_b();" />
                     <figcaption>
                         <p>Let us not become veary in doing good, for at the proper time we will reap a harvest if we do not give up. </p>
                         <div class="heading">
                             <h2>성무<span>성당</span></h2>
                         </div>
                     </figcaption>
-                    <a href="#"></a>
                 </figure>
-
+                </div>
                
-               <div onclick="z_arange();">
-                <figure class="snip1200" style="margin-left: 3%; margin-right: 2%;" onclick="z_arange();">
-                    <img src="./img/SELECTONE.jpg" alt="원불교" onclick="z_arange();"/>
+               <div onclick="z_c();">
+                <figure class="snip1200" style="margin-left: 3%; margin-right: 2%;">
+                    <img src="./img/SELECTONE.jpg" alt="원불교"/>
                     <figcaption>
                         <p>사람이 무슨 일을 할 때에 먼저 순과 역을 잘 구분해서 순으로 주로하여 한다면 성공하지 못할 일이 거의 없으리라. </p>
                         <div class="heading">
@@ -281,9 +297,9 @@
                 </div>
                 
                 
-                <div onclick="z_arg();">
-                <figure class="snip1200" onclick="z_arg();" >
-                    <img src="./img/SELECTBUL.jpg" alt="불교" onclick="z_arg();"/>
+                <div onclick="z_d();">
+                <figure class="snip1200" onclick="z_d();" >
+                    <img src="./img/SELECTBUL.jpg" alt="불교"/>
                     <figcaption>
                         <p>우리의 마음은 살아있는 생명이요, 그것이 곧 나라는 존재이다.</p>
                         <div class="heading">
@@ -301,68 +317,78 @@
     <div class="content-container">
         <div class="content" style="height: 500px;">
 
-            <div id="zlayer1" style="width:200px; height:500px; position:absolute; left:10px; top:51px; background-color:#FFFF00; z-index:1;" onclick="z_arange();">
-                첫번째 레이어
-            </div>
-            
-            <div id="zlayer2" style="width:200px; height:500px; position:absolute; left:30px; top:100px; background-color:#00FFFF; z-index:2;" onclick= "z_arg();" >
-                두번째 레이어
-            </div>
-        </div>
-    </div>
-
-    <!--소식 슬라이드-->
-    <div class="content-container">
-        <div class="content">
-            <div class="swiper-container">
+            <div id="zlayer_a" style="width:1300px; height:500px; position:absolute; left:10px; top:50px; background-color: aliceblue; z-index:4;" onclick="z_a();">
+                성무 교회
+                <div style="height: 500px; width: 650px; position: absolute; left: 650px; top: 5%;">
+                <div class="swiper-container">
                 <div class="swiper-wrapper" id="KI">
                     <div class="swiper-slide">
-                        <img src="./img/KI.jpg" class="기독교" />
+                        <img src="./img/Test1.jpg" class="기독교" />
                     </div>
                     <div class="swiper-slide">
-                        <img src="./img/SWIPER1.jpg" class="스위퍼1" />
+                        <img src="./img/Test2.jpg" class="스위퍼1" />
                     </div>
-                    <div class="swiper-slide">
-                        <img src="./img/SWIPER2.jpg" class="스위퍼2" />
-                    </div>
-                    <div class="swiper-slide">
-                        <img src="./img/SWIPER3.jpg" class="스위퍼3" />
-                    </div>
-
                 </div>
                 <!-- Add Pagination -->
                 <div class="swiper-pagination"></div>
-                <!-- Add Arrows -->
-                <div class="swiper-button-next"></div>
-                <div class="swiper-button-prev"></div>
+                    </div>
+            </div>
+            </div>
+            
+            <div id="zlayer_b" style="width:1300px; height:500px; position:absolute; left:20px; top:60px; background-color:antiquewhite; z-index:3;" onclick= "z_b();" >
+                성무 성당
+                <div style="height: 500px; width: 650px; position: absolute; left: 650px; top: 5%;">
+                <div class="swiper-container">
+                <div class="swiper-wrapper" id="KI">
+                    <div class="swiper-slide">
+                        <img src="./img/Test1.jpg" class="기독교" />
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./img/Test2.jpg" class="스위퍼1" />
+                    </div>
+                </div>
+                <!-- Add Pagination -->
+                <div class="swiper-pagination"></div>
+                    </div>
+            </div>
+            </div>
+            <div id="zlayer_c" style="width:1300px; height:500px; position:absolute; left:30px; top:70px; background-color:azure; z-index:2;" onclick="z_c();">
+                성무 교당
+                <div style="height: 500px; width: 650px; position: absolute; left: 650px; top: 5%;">
+                <div class="swiper-container">
+                <div class="swiper-wrapper" id="KI">
+                    <div class="swiper-slide">
+                        <img src="./img/Test1.jpg" class="기독교" />
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./img/Test2.jpg" class="스위퍼1" />
+                    </div>
+                </div>
+                <!-- Add Pagination -->
+                <div class="swiper-pagination"></div>
+                    </div>
+            </div>
+            </div>
+            <div id="zlayer_d" style="width:1300px; height:500px; position:absolute; left:40px; top:80px; background-color:beige; z-index:1;" onclick="z_d();">
+                성무 호국사
+                <div style="height: 500px; width: 650px; position: absolute; left: 650px; top: 5%;">
+                <div class="swiper-container">
+                <div class="swiper-wrapper" id="KI">
+                    <div class="swiper-slide">
+                        <img src="./img/Test1.jpg" class="기독교" />
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./img/Test2.jpg" class="스위퍼1" />
+                    </div>
+                </div>
+                <!-- Add Pagination -->
+                <div class="swiper-pagination"></div>
+                    </div>
+            </div>
             </div>
         </div>
-        <div class="welcomeXE">
-            <section class="guide">
-                <span class="noti" style="color:#ae9579 !important">&nbsp;News</span>
-                <ul>
-                    <li class="newss">
-                        <h2>
-                            성무
-                            <br> 교회
-                        </h2>
-                    </li>
-                    <li class="guidenews" style="font-weight: 500">
-                        <p>
-                            성무교회 입니다.
-                        </p>
-                        <p>
-                            67기 전산정보과학과 김진혁, 윤동현생도가 제작했습니다.
-                        </p>
-                        <p>
-                            교수님 사랑합니다.
-                        </p>
-                    </li>
-                </ul>
-            </section>
-        </div>
-
-        <!-- Swiper JS -->
+        
+         <!-- Swiper JS -->
         <script src="./js/swiper.min.js"></script>
 
         <!-- Initialize Swiper -->
@@ -386,7 +412,6 @@
                 },
             });
         </script>
-
     </div>
 
     <!--Contact-->
