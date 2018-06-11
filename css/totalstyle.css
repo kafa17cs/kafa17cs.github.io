@@ -157,8 +157,12 @@
 /* -- 모바일 반응형 -- */
 
 @media (max-width: 800px) {
-
-
+    
+    .layer {
+        max-height: 200px;
+        margin: 0px auto 0;
+    }
+    
     /* -- 메뉴 토글 등장 -- */
     #menu-toggle {
         display: none;
@@ -312,6 +316,7 @@ h2.contitle {
 }
 
 h1.intro {
+    
     padding-top: 5%;
     padding-left: 10%;
     color: dimgray;
