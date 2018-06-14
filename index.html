@@ -8,8 +8,8 @@
     <title>성무대 종교센터</title>
     <link rel="shortcut icon" href="./img/favicon.ico">
     <link rel="stylesheet" href="./css/swiper.min.css">
-    <link rel="stylesheet" href="./css/welcome.css">   
-    <link rel='stylesheet' href='./css/nanum.css' >
+    <link rel="stylesheet" href="./css/welcome.css">
+    <link rel='stylesheet' href='./css/nanum.css'>
     <link rel="stylesheet" href="./css/totalstyle.css">
     <link rel="stylesheet" href="./css/menustyle.css">
     <link rel="stylesheet" href="./css/mouseover.css">
@@ -67,43 +67,41 @@
                 }, 1000);
             });
         });
+
     </script>
-    
+
     <script>
+        //z-index 를 서로 바꿔주는 메서드 2개 작성 (z-index 는 숫자가 클수록 힘이 쎄다-_-!)
 
+        function z_a() {
+            document.getElementById("zlayer_a").style.zIndex = 4;
+            document.getElementById("zlayer_b").style.zIndex = 3;
+            document.getElementById("zlayer_c").style.zIndex = 2;
+            document.getElementById("zlayer_d").style.zIndex = 1;
+        }
 
-    //z-index 를 서로 바꿔주는 메서드 2개 작성 (z-index 는 숫자가 클수록 힘이 쎄다-_-!)
- 
-    function z_a()
-    {
-      document.getElementById("zlayer_a").style.zIndex = 4;  
-      document.getElementById("zlayer_b").style.zIndex = 3;
-      document.getElementById("zlayer_c").style.zIndex = 2;
-      document.getElementById("zlayer_d").style.zIndex = 1;
-    }
-    function z_b()
-    {
-      document.getElementById("zlayer_a").style.zIndex = 1;  
-      document.getElementById("zlayer_b").style.zIndex = 4;
-      document.getElementById("zlayer_c").style.zIndex = 3;
-      document.getElementById("zlayer_d").style.zIndex = 2;
-    }
-         function z_c()
-    {
-      document.getElementById("zlayer_a").style.zIndex = 2;  
-      document.getElementById("zlayer_b").style.zIndex = 1;
-      document.getElementById("zlayer_c").style.zIndex = 4;
-      document.getElementById("zlayer_d").style.zIndex = 3;
-    }
-         function z_d()
-    {
-      document.getElementById("zlayer_a").style.zIndex = 3;  
-      document.getElementById("zlayer_b").style.zIndex = 2;
-      document.getElementById("zlayer_c").style.zIndex = 1;
-      document.getElementById("zlayer_d").style.zIndex = 4;
-    }
-            
-  </script>
+        function z_b() {
+            document.getElementById("zlayer_a").style.zIndex = 1;
+            document.getElementById("zlayer_b").style.zIndex = 4;
+            document.getElementById("zlayer_c").style.zIndex = 3;
+            document.getElementById("zlayer_d").style.zIndex = 2;
+        }
+
+        function z_c() {
+            document.getElementById("zlayer_a").style.zIndex = 2;
+            document.getElementById("zlayer_b").style.zIndex = 1;
+            document.getElementById("zlayer_c").style.zIndex = 4;
+            document.getElementById("zlayer_d").style.zIndex = 3;
+        }
+
+        function z_d() {
+            document.getElementById("zlayer_a").style.zIndex = 3;
+            document.getElementById("zlayer_b").style.zIndex = 2;
+            document.getElementById("zlayer_c").style.zIndex = 1;
+            document.getElementById("zlayer_d").style.zIndex = 4;
+        }
+
+    </script>
 
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-117196579-1"></script>
@@ -116,6 +114,7 @@
         gtag('js', new Date());
 
         gtag('config', 'UA-117196579-1');
+
     </script>
     <!--슬라이드 스타일-->
     <style>
@@ -157,6 +156,7 @@
             -webkit-align-items: center;
             align-items: center;
         }
+
     </style>
 </head>
 
@@ -214,7 +214,7 @@
                 </h2>
             </div>
         </div>
-        
+
 
         <!------- 소식 ------->
         <div class="welcomeXE" id="NEWS">
@@ -232,7 +232,7 @@
                         </div>
                         <div class="swiper-slide">
                             <img src="./img/news2.jpg" />
-                        </div>                       
+                        </div>
                     </div>
                     <!-- Add Pagination -->
                     <div class="swiper-pagination"></div>
@@ -248,138 +248,145 @@
 
     <!------- 기관 ------->
     <div class="welcomeXE" id="INSTITUTION" style="background-color: white; margin: 0;">
-            <section class="guide">
-                <span class="noti" style="color:#ae9579 !important; margin: 0;">&nbsp;기관<br /><br /></span>
-            </section>
-        </div>
+        <section class="guide">
+            <span class="noti" style="color:#ae9579 !important; margin: 0;">&nbsp;기관<br /><br /></span>
+        </section>
+    </div>
     <div class="content">
-    <div class="content-container" style="background-color: white;">
-        <div class="content" style="margin: auto;">
-            <div style="margin: auto;">
-               <div onclick="z_a();">
-                <figure class="snip1200" style="margin-left: 3%; margin-right: 2%;">
-                    <img src="./img/SELECTKI.jpg" alt="sq-sample32" onclick="z_a();" />
-                    <figcaption>
-                        <p>Perseverance must finish its work so that you may be mature and complete, not lacking anything. </p>
-                        <div class="heading">
-                            <h2>성무<span>교회</span></h2>
-                        </div>
-                    </figcaption>
-                </figure>
+        <div class="content-container" style="background-color: white;">
+            <div class="content" style="margin: auto;">
+                <div style="margin: auto;">
+                    <div onclick="z_a();">
+                        <figure class="snip1200" style="margin-left: 3%; margin-right: 2%;">
+                            <img src="./img/SELECTKI.jpg" alt="sq-sample32" onclick="z_a();" />
+                            <figcaption>
+                                <p>Perseverance must finish its work so that you may be mature and complete, not lacking anything. </p>
+                                <div class="heading">
+                                    <h2>성무<span>교회</span></h2>
+                                </div>
+                            </figcaption>
+                        </figure>
+                    </div>
+                    <div onclick="z_b();">
+                        <figure class="snip1200">
+                            <img src="./img/SELECTCH.jpg" alt="천주교" onclick="z_b();" />
+                            <figcaption>
+                                <p>Let us not become veary in doing good, for at the proper time we will reap a harvest if we do not give up. </p>
+                                <div class="heading">
+                                    <h2>성무<span>성당</span></h2>
+                                </div>
+                            </figcaption>
+                        </figure>
+                    </div>
+
+                    <div onclick="z_c();">
+                        <figure class="snip1200" style="margin-left: 3%; margin-right: 2%;">
+                            <img src="./img/SELECTONE.jpg" alt="원불교" />
+                            <figcaption>
+                                <p>사람이 무슨 일을 할 때에 먼저 순과 역을 잘 구분해서 순으로 주로하여 한다면 성공하지 못할 일이 거의 없으리라. </p>
+                                <div class="heading">
+                                    <h2>성무<span>교당</span></h2>
+                                </div>
+                            </figcaption>
+
+                        </figure>
+                    </div>
+
+
+                    <div onclick="z_d();">
+                        <figure class="snip1200" onclick="z_d();">
+                            <img src="./img/SELECTBUL.jpg" alt="불교" />
+                            <figcaption>
+                                <p>우리의 마음은 살아있는 생명이요, 그것이 곧 나라는 존재이다.</p>
+                                <div class="heading">
+                                    <h2>성무<span>호국사</span></h2>
+                                </div>
+                            </figcaption>
+
+                        </figure>
+                    </div>
+
                 </div>
-                <div onclick="z_b();">
-                <figure class="snip1200">
-                    <img src="./img/SELECTCH.jpg" alt="천주교" onclick="z_b();" />
-                    <figcaption>
-                        <p>Let us not become veary in doing good, for at the proper time we will reap a harvest if we do not give up. </p>
-                        <div class="heading">
-                            <h2>성무<span>성당</span></h2>
-                        </div>
-                    </figcaption>
-                </figure>
-                </div>
-               
-               <div onclick="z_c();">
-                <figure class="snip1200" style="margin-left: 3%; margin-right: 2%;">
-                    <img src="./img/SELECTONE.jpg" alt="원불교"/>
-                    <figcaption>
-                        <p>사람이 무슨 일을 할 때에 먼저 순과 역을 잘 구분해서 순으로 주로하여 한다면 성공하지 못할 일이 거의 없으리라. </p>
-                        <div class="heading">
-                            <h2>성무<span>교당</span></h2>
-                        </div>
-                    </figcaption>
-                    
-                </figure>
-                </div>
-                
-                
-                <div onclick="z_d();">
-                <figure class="snip1200" onclick="z_d();" >
-                    <img src="./img/SELECTBUL.jpg" alt="불교"/>
-                    <figcaption>
-                        <p>우리의 마음은 살아있는 생명이요, 그것이 곧 나라는 존재이다.</p>
-                        <div class="heading">
-                            <h2>성무<span>호국사</span></h2>
-                        </div>
-                    </figcaption>
-                    
-                </figure>
-                </div>
-                
             </div>
         </div>
-    </div>
     </div>
 
     <div class="content-container">
         <div class="content">
             <div class="layer" style="height: 400px">
-            <div id="zlayer_a" style="width:100%; height:100%; position:absolute; background-color: aliceblue; z-index:4;" onclick="z_a();">
-                <span class="noti" style="color:#ae9579 !important; font-size: 2.5vw;">성무교회<br /><br />&nbsp;"복음의<br/>&nbsp;&nbsp;&nbsp;&nbsp;비밀을 알아<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;열방을 치유하는 교회"</span>
-                <div style="height: 100%; width: 45%; position: absolute; left: 50%; top: 5%;">
-                <div class="swiper-container">
-                <div class="swiper-wrapper" id="KI">
-                    <div class="swiper-slide">
-                        <img src="./img/KI1.jpg" class="기독교" />
+                <div id="zlayer_a" style="width:100%; height:100%; position:absolute; background-color: aliceblue; z-index:4; background-image: url(./img/bgg.jpg);" onclick="z_a();">
+                    <div style="width: 40%; height: 80%; background-color: white; background: rgba(255, 255, 255, 0.4); margin-left: 3%; margin-top: 2%; ">
+                        <div class="noti" style="color:#ae9579 !important; font-size: 2.5vw; padding-left: 5%; padding-top: 2%; "><span style="color:darkblue; font-weight: 100;"><span style="font-weight: 550;">성무교회</span><br /><br /><em>&nbsp;"복음의<br/>&nbsp;&nbsp;&nbsp;&nbsp;비밀을 알아<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;열방을 치유하는 교회"</em></span>
+                        </div>
                     </div>
-                    <div class="swiper-slide">
-                        <img src="./img/KI1_1.jpg" class="스위퍼1" />
-                    </div>
-                </div>
-                <!-- Add Pagination -->
-                <div class="swiper-pagination"></div>
-                    </div>
-            </div>
-            </div>
-            
-            <div id="zlayer_b" style="width:100%; height:100%; position:absolute; background-color:antiquewhite; z-index:3;" onclick= "z_b();" >
-               <span class="noti" style="color:#ae9579 !important; font-size: 2.5vw;">성무성당<br /><br /><i>&nbsp;"주님께는<br/>&nbsp;&nbsp;&nbsp;&nbsp;자애가 있고<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;풍요로운 구원이 있네."<br /><br /></i></span>
-                <div style="height: 100%; width: 45%; position: absolute; left: 50%; top: 5%;">
-                <div class="swiper-container">
-                <div class="swiper-wrapper" id="KI">
-                    <div class="swiper-slide">
-                        <img src="./img/CHUN1.jpg" class="기독교" />
-                    </div>
-                    <div class="swiper-slide">
-                        <img src="./img/CHUN2.JPG" class="스위퍼1" />
+                    <div style="height: 100%; width: 45%; position: absolute; left: 50%; top: 5%;">
+                        <div class="swiper-container">
+                            <div class="swiper-wrapper" id="KI">
+                                <div class="swiper-slide">
+                                    <img src="./img/KI1.jpg" class="기독교" />
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="./img/KI1_1.jpg" class="스위퍼1" />
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <!-- Add Pagination -->
-                <div class="swiper-pagination"></div>
+
+                <div id="zlayer_b" style="width:100%; height:100%; position:absolute; z-index:3; background-image: url(./img/bgg.jpg);" onclick="z_b();">
+                    <div style="width: 40%; height: 80%; background-color: white; background: rgba(255, 255, 255, 0.4); margin-left: 3%; margin-top: 2%; ">
+                        <div class="noti" style="color:#ae9579 !important; font-size: 2.5vw; padding-left: 5%; padding-top: 2%; "><span style="color:darkblue; font-weight: 100;"><span style="font-weight: 550;">성무성당</span><br /><br /><i>&nbsp;"주님께는<br/>&nbsp;&nbsp;&nbsp;&nbsp;자애가 있고<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;풍요로운 구원이 있네."<br /><br /></i></span>
+                        </div>
                     </div>
-            </div>
-            </div>
-            <div id="zlayer_c" style="width:100%; height:100%; position:absolute; background-color:azure; z-index:2;" onclick="z_c();">
-                <span class="noti" style="color:#ae9579 !important; font-size: 2.0vw;">성무교당<br /><br />&nbsp;천하의 제일 큰 법은<br/>&nbsp;&nbsp;&nbsp;&nbsp;모든 사람의 마음을 <br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;잘 쓰게 가르쳐 놓은 용심법이다.<br /><br /></span>
-                <div style="height: 100%; width: 45%; position: absolute; left: 50%; top: 5%;">
-                <div class="swiper-container">
-                <div class="swiper-wrapper" id="KI">
-                    <div class="swiper-slide">
-                        <img src="./img/ONE2.jpg" class="스위퍼1" />
-                    </div>
-                </div>
-                <!-- Add Pagination -->
-                <div class="swiper-pagination"></div>
-                    </div>
-            </div>
-            </div>
-            <div id="zlayer_d" style="width:100%; height:100%; position:absolute; background-color:beige; z-index:1;" onclick="z_d();">
-                <span class="noti" style="color:#ae9579 !important; font-size: 2.5vw;">성무호국사<br /><br />&nbsp;생도와 <br />&nbsp;&nbsp;함께하는 성무대 속<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;천년고찰 '호국사'<br /><br /></span>
-                <div style="height: 100%; width: 45%; position: absolute; left: 50%; top: 5%;">
-                <div class="swiper-container">
-                <div class="swiper-wrapper" id="KI">                 <div class="swiper-slide">
-                        <img src="./img/BUL2.jpg" class="스위퍼1" />
+                    <div style="height: 100%; width: 45%; position: absolute; left: 50%; top: 5%;">
+                        <div class="swiper-container">
+                            <div class="swiper-wrapper" id="KI">
+                                <div class="swiper-slide">
+                                    <img src="./img/CHUN1.jpg" class="기독교" />
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="./img/CHUN2.JPG" class="스위퍼1" />
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <!-- Add Pagination -->
-                <div class="swiper-pagination"></div>
+                <div id="zlayer_c" style="width:100%; height:100%; position:absolute; z-index:2; background-image: url(./img/bgg.jpg);" onclick="z_c();">
+                    <div style="width: 40%; height: 80%; background-color: white; background: rgba(255, 255, 255, 0.4); margin-left: 3%; margin-top: 2%; ">
+                        <div class="noti" style="color:#ae9579 !important; font-size: 2.5vw; padding-left: 5%; padding-top: 2%; "><span style="color:darkblue; font-weight: 100;"><span style="font-weight: 550;">성무교당</span><br /><br /><em>"生獰頭角恣咆哮  <br/>&nbsp; &nbsp; &nbsp; &nbsp; 
+走溪山路轉 遙帮帮我."</em><br /><br /></span>
+                        </div>
                     </div>
-            </div>
+                    <div style="height: 100%; width: 45%; position: absolute; left: 50%; top: 5%;">
+                        <div class="swiper-container">
+                            <div class="swiper-wrapper" id="KI">
+                                <div class="swiper-slide">
+                                    <img src="./img/ONE2.jpg" class="스위퍼1" />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="zlayer_d" style="width:100%; height:100%; position:absolute; z-index:1; background-image: url(./img/bgg.jpg);" onclick="z_d();">
+                    <div style="width: 40%; height: 80%; background-color: white; background: rgba(255, 255, 255, 0.4); margin-left: 3%; margin-top: 2%; ">
+                        <div class="noti" style="color:#ae9579 !important; font-size: 2.5vw; padding-left: 5%; padding-top: 2%; "><span style="color:darkblue; font-weight: 100;"><span style="font-weight: 550;">성무호국사</span><br /><br /><em>&nbsp;"생도와 <br />&nbsp;&nbsp;함께하는 성무대 속<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;천년고찰 '호국사'&nbsp;"</em><br /><br /></span>
+                        </div>
+                    </div>
+                    <div style="height: 100%; width: 45%; position: absolute; left: 50%; top: 5%;">
+                        <div class="swiper-container">
+                            <div class="swiper-wrapper" id="KI">
+                                <div class="swiper-slide">
+                                    <img src="./img/BUL2.jpg" class="스위퍼1" />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
-        </div>
-        
-         <!-- Swiper JS -->
+
+
+        <!-- Swiper JS -->
         <script src="./js/swiper.min.js"></script>
 
         <!-- Initialize Swiper -->
@@ -402,6 +409,7 @@
                     prevEl: '.swiper-button-prev',
                 },
             });
+
         </script>
     </div>
 
@@ -501,7 +509,7 @@
         </ul>
     </div>
     <div class="go-top" style="display: block;"><a href="#title" id="homeup">∧</a></div>
-    <div class="go-bottom" style="display: block;"><a href="#bottom" id="homedown" >∨</a></div>
+    <div class="go-bottom" style="display: block;"><a href="#bottom" id="homedown">∨</a></div>
 
 </body>
 
